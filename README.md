@@ -13,7 +13,7 @@ pip install getpass
 <br>
 2- Portal Username & Password
 <br><br>
-# Guid
+# Guide
 1 - Run The Script Using Command:
 <br>
 python3 HelliSafir.py
