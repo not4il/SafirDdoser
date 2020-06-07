@@ -66,6 +66,7 @@ def crmon():
 					print(f'{color.RED}Error!', f'{color.BLACK}|{color.YELLOW}', u.elapsed, f'{color.BLACK}|{color.GREEN}', 'Good:', i, f'{color.BLACK}|{color.RED}', 'Bad:', j)
 		except KeyboardInterrupt:
 			print(f'{color.RED}Script Stopped!{color.WHITE}')
+			time.sleep(2)
 			exit()
 	else:
 		print(f'{color.RED}Login Failed!')
