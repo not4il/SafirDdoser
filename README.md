@@ -27,6 +27,8 @@ python3 HelliSafir.py
 3 - Ddos Attack Starts:
 <br><br>
 ![Watch the video](http://s13.picofile.com/file/8399367392/shot3.png)
+<br>
+To Stop The Ddos Attack Use "ctrl + c"
 <br><br>
 # Executable File
 As You Worked With The Script!
