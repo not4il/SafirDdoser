@@ -1,7 +1,6 @@
-import requests
-import getpass
-import time
-import os
+import requests, getpass
+import time, os
+
 
 class color():
 	RED = '\033[31m'
@@ -15,16 +14,19 @@ class color():
 	WHITE = '\033[37m'
 	BLACK = '\033[1;30;48m'
 
+
 def banner():
 	print(f'''{color.GREEN}  _____        __ _      _____           _        _ _____      _                     
- / ____|      / _(_)    |  __ \         | |      | |  __ \    | | {color.CYAN}github.com/weed-web{color.GREEN}
+ / ____|      / _(_)    |  __ \         | |      | |  __ \    | | {color.CYAN}github.com/not4il{color.GREEN}
 | (___   __ _| |_ _ _ __| |__) |__  _ __| |_ __ _| | |  | | __| | ___  ___  ___ _ __ 
  \___ \ / _` |  _| | '__|  ___/ _ \| '__| __/ _` | | |  | |/ _` |/ _ \/ __|/ _ \ '__|
  ____) | (_| | | | | |  | |  | (_) | |  | || (_| | | |__| | (_| | (_) \__ \  __/ |   
 |_____/ \__,_|_| |_|_|  |_|   \___/|_|   \__\__,_|_|_____/ \__,_|\___/|___/\___|_|   \n''')
 
+
 def clean():
 	os.system(['clear', 'cls'][os.name == 'nt'])
+
 
 def getup():
 	try:
@@ -36,6 +38,7 @@ def getup():
 		banner()
 		print(f'{color.RED}Please Type Correct Credentials!')
 		getup()
+
 
 def crmon():
 	clean()
@@ -72,5 +75,6 @@ def crmon():
 		print(f'{color.RED}Login Failed!')
 		time.sleep(2)
 		crmon()
+
 
 crmon()
